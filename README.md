@@ -11,7 +11,7 @@
   4. Open your command prompt and navigate to the folder containing scraper.py
   
   5. Type scraper.py followed by the url you want to moniter and an amount of seconds to moniter for.
-//An example comand is <C:/path>scraper.py https://fidosodd.github.io 20
+// An example comand is <C:/path>scraper.py https://fidosodd.github.io 20
 
   6. Press eneter
 
