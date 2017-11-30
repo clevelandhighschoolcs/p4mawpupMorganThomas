@@ -5,7 +5,9 @@
 
   1. Download and extract the files
   
-  2. Make sure Python version 2.7.X is installeed
+  2. Make sure Python version 2.7.X is installed
+  
+It should be a system variable. If you don't know how to do that follow this lik: https://www.youtube.com/watch?v=Y2q_b4ugPWk
   
   3. Make sure the Python library Beautiful Soup 4 (bs4) is installed
   
