@@ -19,7 +19,7 @@ def getname():
  name_box = soup.find('title')
  global name
  name = name_box.text.strip()
- print 'checking "'+name+'" for chganges...'
+ print 'checking "'+name+'" for changes...'
 def is_number(s):
  try:
   int(s)
@@ -46,13 +46,13 @@ def main():
   datastring = str(data)
   length2 = len(datastring)
   os.system('cls')
-  print 'checking "'+name+'" for chganges...'
+  print 'checking "'+name+'" for changes...'
   print 'Working...'
   print length2
   if length2 != length1:
    difTime = str(TTimeIint - TTimeint+1)
    os.system('cls')
-   print 'checking "'+name+'" for chganges...'
+   print 'checking "'+name+'" for changes...'
    print 'Working...'
    print length1
    print length2
