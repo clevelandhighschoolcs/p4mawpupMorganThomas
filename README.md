@@ -11,6 +11,8 @@ It should be a system variable. If you don't know how to do that follow this lin
   
   3. Make sure the Python library Beautiful Soup 4 (bs4) is installed
   
+(If you have pip you can use 'pip install bs4')
+  
   4. Open your command prompt and navigate to the folder containing scraper.py
   
   5. Type scraper.py followed by the url you want to moniter and an amount of seconds to moniter for.
