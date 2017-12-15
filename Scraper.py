@@ -4,12 +4,24 @@ import sys
 import time
 site = sys.argv[1]
 import os
+import requests
+from twilio.rest import Client
+
+msg = raw_input("Do you want to get a message of the results?(y/n)  ")
+if (msg == "y"):
+	twilio = raw_input("Do you have a twilio account?(y/n)  ")
+	if (twilio == "y"):
+		use = raw_input("Do you want to use your twilio account?(y/n)  ")
+		if (use == "y"):
+			account_sid = raw_input("What is your account sid?  ")
+			auth_token = raw_input("What is your authorization token?  ")
+			twilio_phone_number = raw_input("What is your Twilio phone number?  ")
+			my_phone_number = raw_input("What is your phone number? (must be registered in twilio)  ")
 
 if len(sys.argv) < 3 or len(sys.argv) > 3:
  addArgu = len(sys.argv) - 1
  addArgustr = str(addArgu)
- print 'This program needs exactly 2 additional arguments, an adress and a number of seconds.'+' You have '+addArgustr+'.'
- print 
+ print 'This program needs exactly 2 additional arguments, an address and a number of seconds.'+' You have '+addArgustr+'.'
  
  exit()
 def getname():
@@ -57,11 +69,22 @@ def main():
    print length1
    print length2
    print 'The page has changed after '+difTime+' second(s).'
+   if (msg == "y"):
+     if (twilio == "y"):
+      if (use == "y"):
+	      message()
    exit()
   else:
     TTimeint -= 1
     time.sleep(1)
  if TTimeint == 0:
   print 'There was no change in '+TTimeI+' seconds.'
+def message():
+	tclient = Client(account_sid, auth_token)
+	tclient.messages.create(
+		body=body,
+		to=my_phone_number,
+		from_=twilio_phone_number
+	)
 is_number(sys.argv[2])
 main()
