@@ -33,3 +33,6 @@ It will tell you the title of the website you searched.
 
 It will clear your command line before running and only fills a couple lines. No mess!
 
+## Flowchart:
+
+![flowchart](https://raw.githubusercontent.com/clevelandhighschoolcs/p4mawpup-MorganThomas/master/Flowchart.png)
