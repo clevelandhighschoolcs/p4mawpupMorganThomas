@@ -37,4 +37,6 @@ It will clear your command line before running and only fills a couple lines. No
 
 ## Flowchart:
 
+Note: flowchart may not represent the most recent version of the file.
+
 ![flowchart](https://raw.githubusercontent.com/clevelandhighschoolcs/p4mawpup-MorganThomas/master/Flowchart.png)
